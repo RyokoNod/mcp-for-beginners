@@ -6,12 +6,6 @@ mcp = FastMCP("example-stdio-server")
 
 
 @mcp.tool()
-def calculate_sum(a: int, b: int) -> int:
-    """Calculate the sum of two numbers"""
-    return a + b
-
-
-@mcp.tool()
 def get_greeting(name: str) -> str:
     """Generate a personalized greeting"""
     return f"Hello, {name}! Welcome to MCP stdio server."
